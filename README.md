@@ -9,7 +9,7 @@ This project implements an automatic darkness-detection system using an LDR and 
 - **Sensor**: Light sensor/ Photoresistor
 - **Display**: I²C LCD 16x2
 - **Programming**: STM32CubeMX/ LL drivers
-- **Demo**: Simple demonstration video showcasing..
+- **Demo**: Simple demonstration video showcasing how the system automatically turns the lamp ON in darkness and OFF when light is detected.
 
   ![Demo1](Demo_1_image.png)
 
@@ -28,6 +28,6 @@ This project implements an automatic darkness-detection system using an LDR and 
 1. Clone this repository:
 git clone https://github.com/Ghouilaanas/LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY.git
 2. 📂 **Open the STM32CubeIDE project** corresponding to the desired traffic flow detection approach.
-3. 🛠️ **Build and flash the firmware** for that approach onto the appropriate STM32 board.
-4. 🔌 **Connect the sensors, microcontroller, and display** following the wiring diagram for the selected setup.
-5. ⚡ **Power on the system** and **observe the real-time traffic flow readings** on the LCD.
+3. 🛠️ **Build and flash the firmware** to your STM32 board using STM32CubeIDE.
+4. 🔌 **Assemble the hardware setup** by connecting the LDR voltage divider, relay module, and lamp to the STM32 according to the wiring diagram.
+5. ⚡ **Power on the system** and **observe how the system automatically turns the lamp ON in darkness and OFF when light is detected**.
