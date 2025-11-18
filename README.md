@@ -10,6 +10,9 @@ The project is configured with **STM32CubeMX** and programmed using **low-level 
 - **Sensor**: Light sensor/ Photoresistor
 - **Display**: I²C LCD 16x2
 - **Programming**: STM32CubeMX/ LL drivers
+- **Demo**: Simple demonstration video showcasing..
+
+  ![Demo1](Demo_1_image.png)
 
 #### 1.2 Hardware connections
 - **DHT11** : 
