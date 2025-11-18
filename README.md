@@ -11,7 +11,9 @@ This project implements an automatic darkness-detection system using an LDR and 
 - **Programming**: STM32CubeMX/ LL drivers
 - **Demo**: Simple demonstration video showcasing how the system automatically turns the lamp ON in darkness and OFF when light is detected.
 
-  ![Demo1](Demo_image.png)
+  ![Demo](Demo_image.png)
+  
+   [▶️ Download Demo](Demo.mp4)
 
 #### 1.2 Hardware connections
 - **Relay Module** : 
