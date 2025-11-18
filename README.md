@@ -29,7 +29,7 @@ This project implements an automatic darkness-detection system using an LDR and 
 ## 📖 Guide to Use
 1. Clone this repository:
 git clone https://github.com/Ghouilaanas/LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY.git
-2. 📂 **Open the STM32CubeIDE project** corresponding to the desired traffic flow detection approach.
+2. 📂 **Open the STM32CubeIDE project** included in the repository to view the STM32CubeMX configuration and the low-level (LL) ADC/relay control code.
 3. 🛠️ **Build and flash the firmware** to your STM32 board using STM32CubeIDE.
 4. 🔌 **Assemble the hardware setup** by connecting the LDR voltage divider, relay module, and lamp to the STM32 according to the wiring diagram.
 5. ⚡ **Power on the system** and **observe how the system automatically turns the lamp ON in darkness and OFF when light is detected**.
