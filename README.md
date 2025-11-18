@@ -1,12 +1,11 @@
 # 💡 LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY
+An automatic light-control system that uses a darkness-activated sensor built with an LDR and a microcontroller. When the ambient light level drops below a set threshold, the circuit turns on a lamp through a relay, and automatically switches it off again when the environment becomes bright.
 ## 📄 Description
-This project uses an LDR (Light Dependent Resistor) and a microcontroller STM32 to create an automatic light-control system. The LDR allows the microcontroller to measure ambient brightness. When the detected light level falls below a defined threshold, the microcontroller activates a relay to switch on a lamp. When sufficient light returns, the relay is turned off, switching the lamp off as well. The setup is ideal for learning about ADC reading, relay control, and basic automation.
-The project is configured with **STM32CubeMX** and programmed using **low-level (LL) drivers** to read light intensity and automatically switch a lamp ON or OFF based on ambient brightness.
-
+This project implements an automatic darkness-detection system using an LDR and an STM32 microcontroller. The configuration is generated with **STM32CubeMX**, while the firmware is written using STM32 **Low-Level (LL) drivers** for direct hardware control. The LDR voltage divider is read through the ADC, allowing the MCU to measure ambient light. When the light intensity falls below a defined threshold, the microcontroller activates a relay to turn ON a lamp; when brightness increases, it turns the lamp OFF. This setup demonstrates basic automation, real-time ADC processing, and low-level embedded development on STM32.
 ## ⚙️ Tools and Technologies
 
 #### 1. Hardware components
-- **Microcontroller**: STM32
+- **Microcontroller**: STM32 Nucleo-L476RG
 - **Sensor**: Light sensor/ Photoresistor
 - **Display**: I²C LCD 16x2
 - **Programming**: STM32CubeMX/ LL drivers
@@ -15,22 +14,12 @@ The project is configured with **STM32CubeMX** and programmed using **low-level 
   ![Demo1](Demo_1_image.png)
 
 #### 1.2 Hardware connections
-- **DHT11** : 
+- **Relay Module** : 
   - VCC → 5V
-  - DATA → Pin 7
+  - IN → PC6 (Pin configured as GPIO_Output)
   - GND → GND
-- **BMP180** : 
-  - VCC → 3.3V
-  - SDA → A4 
-  - SCL → A5
-  - GND → GND
-- **LED RGB (Common cathode)** : 
-  - R → Pin 11
-  - G → Pin 10
-  - B → Pin 9
-  - C → GND
 - **LDR** : 
-  - LDR + resistor in a voltage divider → common output connected to A0
+  - LDR + resistor in a voltage divider → common output connected to PC7
   - One leg of the LDR → 5V
   - The other leg of the LDR → A0 + resistor (≈10kΩ) to GND
 
