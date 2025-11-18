@@ -32,4 +32,4 @@ git clone https://github.com/Ghouilaanas/LDR-Based-Automatic-Darkness-Detection-
 2. 📂 **Open the STM32CubeIDE project** included in the repository to view the STM32CubeMX configuration and the low-level (LL) ADC/relay control code.
 3. 🛠️ **Build and flash the firmware** to your STM32 board using STM32CubeIDE.
 4. 🔌 **Assemble the hardware setup** by connecting the LDR voltage divider, relay module, and lamp to the STM32 according to the wiring diagram.
-5. ⚡ **Power on the system** and observe how the system **automatically turns the lamp ON in darkness and OFF when light is detected**.
+5. ⚡ **Power on the system** and **observe** how the system automatically turns the lamp ON in darkness and OFF when light is detected.
