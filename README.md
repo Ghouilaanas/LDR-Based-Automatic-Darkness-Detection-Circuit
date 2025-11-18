@@ -1,2 +1,2 @@
-# LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY
+# 💡 LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY
 This project uses an LDR (Light Dependent Resistor) and a microcontroller STM32 to create an automatic light-control system. The LDR allows the microcontroller to measure ambient brightness. When the detected light level falls below a defined threshold, the microcontroller activates a relay to switch on a lamp. When sufficient light returns, the relay is turned off, switching the lamp off as well. The setup is ideal for learning about ADC reading, relay control, and basic automation.
