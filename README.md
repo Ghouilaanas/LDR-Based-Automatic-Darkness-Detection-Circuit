@@ -71,9 +71,12 @@ RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
 - Safer than raw address access
 - Portable across STM32 devices
 
+---
+This project demonstrates the evolution of embedded software abstraction:
+Raw addresses → CMSIS → HAL → RTOS
+Understanding CMSIS is essential because it provides low-level control while maintaining clean and portable code.
 
 ---
-
 ## 📖 Guide to Use
 1. Clone this repository:
 git clone https://github.com/Ghouilaanas/LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY.git
