@@ -73,8 +73,7 @@ RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
 
 ---
 This project demonstrates the **evolution of embedded software abstraction** :  
-**Raw addresses** → **CMSIS** → **HAL**
-Understanding CMSIS is essential because it provides low-level control while maintaining clean and portable code.
+**Raw addresses** → **CMSIS** → **HAL**. Therefore, understanding CMSIS is essential because it provides low-level control while maintaining clean and portable code.
 
 ---
 ## 📖 Guide to Use
