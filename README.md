@@ -18,10 +18,10 @@ This project implements an automatic darkness-detection system using an LDR and 
 #### 1.2 Hardware connections
 - **Relay Module** : 
   - VCC → 5V
-  - IN → PC6 (Pin configured as GPIO_Output)
+  - IN → PA7 (Pin configured as GPIO_Output)
   - GND → GND
 - **LDR** : 
-  - LDR D0 → PC7 (Pin configured as GPIO_Input)
+  - LDR D0 → PA0 (Pin configured as GPIO_Input)
   - One leg of the LDR → 5V
   - The other leg of the LDR → GND
 
