@@ -8,7 +8,9 @@ This project implements an automatic darkness-detection system using an LDR and 
 - **Microcontroller**: STM32 Nucleo-L476RG
 - **Sensor**: Digital LDR Light Sensor Module
 - **Display**: I²C LCD 16x2
-- **Programming**: Bare-Metal (Raw Registers) & CMSIS Register Access
+- **Programming**:
+  - IDE: STM32CubeIDE
+  - Abstraction Level: Bare-Metal (Raw Registers) and CMSIS Register Access (No HAL)
 - **Demo**: Simple demonstration video showcasing how the system automatically turns the lamp ON in darkness and OFF when light is detected.
 
   ![Demo](Demo_image.png)
@@ -41,7 +43,34 @@ Example usage :
 #define RCC_APB2ENR   (*(volatile uint32_t*)0x40021018)  
 RCC_APB2ENR |= (1<<2);     // Enable GPIOA clock
 ##### Characteristics
- 
+- Direct access to hardware memory
+- No external libraries required
+- Uses reference manual addresses
+- Maximum hardware transparency
+- ##### Advantages
+- Maximum control over hardware
+- Best for learning microcontroller internals
+- 
+#### 2. Version 2 : CMSIS Register Access (Structured Register Mapping)
+##### Description
+This version uses the CMSIS (Cortex Microcontroller Software Interface Standard) device header provided by ST.
+Registers are accessed using structured register definitions instead of raw addresses.
+CMSIS maps peripherals into C structures, making the code safer and easier to read.
+
+##### Implementation Method
+CMSIS defines peripherals as structures.  
+Example usage :  
+CC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+##### Characteristics
+- Uses CMSIS device header
+- No HAL or LL drivers
+- Direct register control via structured access
+- Provided by STM32CubeIDE automatically
+- ##### Advantages
+- Much more readable
+- Safer than raw address access
+- Portable across STM32 devices
+
 
 ---
 
