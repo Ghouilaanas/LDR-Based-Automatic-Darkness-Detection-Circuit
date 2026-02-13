@@ -38,8 +38,9 @@ This approach represents the lowest-level interaction with the microcontroller.
 ##### Implementation Method
 Registers are defined using macros pointing to their absolute addresses.   
 Example usage :  
-#define RCC_APB2ENR (*(volatile uint32_t*)0x40021018)  
-RCC_APB2ENR |= (1<<2); // Enable GPIOA clock
+#define RCC_APB2ENR   (*(volatile uint32_t*)0x40021018)  
+RCC_APB2ENR |= (1<<2);     // Enable GPIOA clock
+##### Characteristics
  
 
 ---
