@@ -26,6 +26,24 @@ This project implements an automatic darkness-detection system using an LDR and 
   - The other leg of the LDR → GND
 
 ---
+## ⚙️ Implementation Approaches
+This project demonstrates two low-level approaches for interfacing a digital infrared (IR) sensor with the STM32F103C8T6 (Bluepill), without using HAL or STM32CubeMX graphical configuration.
+Both versions provide direct hardware control but differ in abstraction level and portability.
+
+#### 1. Version 1: Raw Register Access
+##### Description
+This version uses direct memory access with manually defined register addresses. Hardware registers are accessed using fixed memory addresses from the reference manual.
+This approach represents the lowest-level interaction with the microcontroller.
+
+##### Implementation Method
+Registers are defined using macros pointing to their absolute addresses.
+Example usage:
+#define RCC_APB2ENR (*(volatile uint32_t*)0x40021018)
+RCC_APB2ENR |= (1<<2); // Enable GPIOA clock
+ 
+
+---
+
 ## 📖 Guide to Use
 1. Clone this repository:
 git clone https://github.com/Ghouilaanas/LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY.git
