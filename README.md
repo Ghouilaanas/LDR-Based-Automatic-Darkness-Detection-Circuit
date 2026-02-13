@@ -60,7 +60,7 @@ CMSIS maps peripherals into C structures, making the code safer and easier to re
 ##### Implementation Method
 CMSIS defines peripherals as structures.  
 Example usage :  
-CC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
 ##### Characteristics
 - Uses CMSIS device header
 - No HAL or LL drivers
