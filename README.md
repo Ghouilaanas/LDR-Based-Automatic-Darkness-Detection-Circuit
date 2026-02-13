@@ -72,8 +72,8 @@ RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
 - Portable across STM32 devices
 
 ---
-This project demonstrates the evolution of embedded software abstraction:
-Raw addresses → CMSIS → HAL → RTOS
+This project demonstrates the **evolution of embedded software abstraction** :  
+**Raw addresses** → **CMSIS** → **HAL**
 Understanding CMSIS is essential because it provides low-level control while maintaining clean and portable code.
 
 ---
