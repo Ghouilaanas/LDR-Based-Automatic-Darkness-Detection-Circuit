@@ -1,4 +1,4 @@
-# 💡 LDR-Based-Automatic-Darkness-Detection-Circuit-Simple-DIY
+# 💡 LDR-Based-Automatic-Darkness-Detection-Circuit
 An automatic light-control system that uses a darkness-activated sensor built with an LDR and a microcontroller. When the ambient light level drops below a set threshold, the circuit turns on a lamp through a relay, and automatically switches it off again when the environment becomes bright.
 ## 📄 Description
 This project implements an automatic darkness-detection system using an LDR and an STM32 microcontroller. The firmware is written using STM32CubeIDE **without using HAL or STM32CubeMX graphical configuration**. The digital LDR sensor provides a HIGH or LOW signal depending on the ambient light intensity. This signal is read through a GPIO input pin, allowing the MCU to detect light or darkness conditions. When the light intensity falls below a defined threshold, the microcontroller activates a relay to turn ON a lamp; when brightness increases, it turns the lamp OFF. This setup demonstrates basic automation, and low-level embedded development on STM32. 
