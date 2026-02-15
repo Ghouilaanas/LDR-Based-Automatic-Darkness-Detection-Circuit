@@ -47,10 +47,10 @@ RCC_APB2ENR |= (1<<2);     // Enable GPIOA clock
 - No external libraries required
 - Uses reference manual addresses
 - Maximum hardware transparency
-- ##### Advantages
+##### Advantages
 - Maximum control over hardware
 - Best for learning microcontroller internals
-- 
+  
 #### 2. Version 2 : CMSIS Register Access (Structured Register Mapping)
 ##### Description
 This version uses the CMSIS (Cortex Microcontroller Software Interface Standard) device header provided by ST.
@@ -66,7 +66,7 @@ RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
 - No HAL or LL drivers
 - Direct register control via structured access
 - Provided by STM32CubeIDE automatically
-- ##### Advantages
+##### Advantages
 - Much more readable
 - Safer than raw address access
 - Portable across STM32 devices
