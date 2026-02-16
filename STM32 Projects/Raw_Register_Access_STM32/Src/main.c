@@ -55,10 +55,10 @@ int main(void)
 
 
 	RCC_APB2ENR |= RCC_APB2ENR_GPIOAEN;
-	GPIOA_MODER &= ~(0xF<<RELAY_PIN_POS * 4);
-	GPIOA_MODER |=(0x2<<RELAY_PIN_POS * 4);
-	GPIOA_MODER &= ~(0xF);
-    GPIOA_MODER |=0x8;
+	GPIOA_CRL &= ~(0xF<<RELAY_PIN_POS * 4);
+	GPIOA_CRL |=(0x2<<RELAY_PIN_POS * 4);
+	GPIOA_CRL &= ~(0xF);
+    GPIOA_CRL |=0x8;
 
 
 while(1){
