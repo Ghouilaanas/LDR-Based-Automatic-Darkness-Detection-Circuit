@@ -52,9 +52,6 @@
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void SysTick_Handler(void){
-
-}
 void GPIO_init(void){
 RCC -> APB2ENR |= RCC_APB2ENR_IOPAEN;                        /*  Activate clock GPIOA */
 
